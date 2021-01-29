@@ -1,0 +1,152 @@
+      /*default colors
+      property: var(--name) used to insert value to said property
+      we then use :root to define which the name means*/
+      :root{
+        --base01: #313131;
+        --base02: #1d81b2;
+        --base03: #313131;
+        --base04: #0bb7bf;
+        --base05: #8b3560;
+        --base06: #358b3c;
+        --base07: #e3e7e3;
+        --base08: #c8d6c8;
+      }
+      
+      .outer {
+        display: grid;
+        align-items: center;
+        color: var(--base01);
+        font: 22px "Courier New", Courier, monospace;
+        height: 100%;
+        justify-content: center;
+        margin: 1em;
+        padding: 1em;
+      }
+
+      .middle {
+        display: inline-flex;
+      }
+      
+      .title {
+        color: var(--base07);
+        font-weight: bold;
+        line-height: 2em;
+        font-size: 1em;
+        grid-column: 1 / -1;
+        margin: 0;
+        text-align: center;
+      }
+  
+      .content {
+        height: auto;
+        color: var(--base08);
+        font-size: 0.5em;
+        text-decoration: none;
+      }
+  
+      .content:focus,
+      .content:hover {
+        color: var(--base02);
+      }
+  
+      .extraNotes { 
+        display: grid;
+        grid-template: repeat(6, 1fr) / repeat(2, 1fr);
+        background-color: var(--base03);
+        grid-gap: 2px;
+        margin: 0 1em;
+        min-width: 24em;
+        padding: 1em 0;
+      }
+  
+      .note {
+        display: block;
+        min-width: 0;  
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+      }
+  
+      .button {
+        top: 0;
+        right: 0;
+        position: fixed;
+      }
+
+      img {
+        position: sticky;
+        top: 0;
+        width: 176px;
+        height: 443px;
+        object-fit: cover;
+        object-position: 50% 100%;
+        width: 8em;
+      }
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: var(--base04); 
+  color: var(--base05); 
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=text]:focus {
+  background-color: rgb(133, 48, 48);
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: var(--base06); 
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: var(--base07); 
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}

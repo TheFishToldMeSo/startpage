@@ -1,0 +1,83 @@
+<!--TO BE ADDED:
+    ability to take notes
+    single search page
+    time/date/weather
+    music
+    randomized greet
+    animation
+    small game
+
+    theme change button
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start page</title>
+
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+      <div class="outer">
+        <div id="themes">
+          <button class="button" type="button" onclick="cycleThemes()">mood</button> 
+        </div>
+
+        <div class="middle">
+          <nav class="terminal-screen" id="inner">
+            <div class ="greet">
+              <h1>Hey bro</h1>
+            </div>
+            <!--COLUMNS CONTAINERS-->
+            <div class="columns-containers">
+              <!--COLUMNS OBJECTS-->
+              <ul class = "main-columns" id="good-vibes">
+                <li class="title">Good vibes</li>
+                <div class="content">
+                  <li><a href="https://manganelo.com/bookmark">Manga</a></li>
+                  <li><a href="https://www.youtube.com/playlist?list=PLZdhz-BLGp3wzO2SEjZ3csHrVTb_U56B1">Playlizt</a></li>
+                  <li><a href="https://jojojadventure.wordpress.com/">Wordpress</a></li>
+                  <li><a href="https://soundcloud.com/user-133393918/sets/why">Souncloud</a></li>
+                </div> 
+              </ul>
+              
+              <ul class = "main-columns" id="job">
+                  <li class="title">Job</li>
+                  <div class="content">
+                    <li><a href="Notes.html">Notes</a></li>
+                    <li><a href="https://github.com/KieIO/shop-intern">Github</a></li>
+                    <li><a href="https://mail.google.com/mail/u/3/#inbox">Inbox 1</a></li>
+                    <li><a href="https://mail.google.com/mail/u/3/#inbox">Inbox 2</a></li>
+                  </div>
+              </ul>    
+
+              <ul class = "main-columns" id="the-net">
+                  <li class="title">The Net</li>
+                  <div class="content">
+                    <li><a href="https://www.facebook.com/messages/t/vannhi.ledo">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.reddit.com/">Reddit</a></li>
+                  </div>
+              </ul>
+              
+              <ul class = "main-columns" id="research">
+                  <li class="title">Research</li>
+                  <div class="content">
+                    <li><a href="https://www.dropbox.com/s/hnbmv7jqjvbkcgm/mannual.zip?dl=0&file_subpath=%2Fmannual">Mannual</a></li>
+                    <li><a href="https://www.dropbox.com/s/ae31u1eiuxkcsyt/craw_data.zip?dl=0">Craw_Data</a></li>
+                    <li><a href="https://attack.mitre.org/">Matrix</a></li>
+                  </div>
+              </ul>
+            </div>
+          </nav>
+
+          <img src="images/1.JPG" id="decoration"> 
+        </div>
+      </div>
+
+      <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    
+    <link rel="stylesheet" href="Notes.css">
+
+</head>
+<body>
+      <div class = "outer">
+        <div id="themes">
+          <button class="button" type="button" onclick="cycleThemes()">moodz</button> 
+        </div>
+
+        <div class="middle">
+            <div class = "terminal-screen" id="inner"> <!--equivalent of nav-->
+                <!--NOTES CONTAINERS-->
+                <div class="notes-containers">
+                    <div class="extraNotes"></div>
+                    <!--Button to add more notes-->
+                    <button class="open-button" onclick="openForm()">Add Note</button>
+                        <div class="form-popup" id="myNote">
+                            <form action="Notes.html" method="get" class="form-container">
+                            <h1>Add Note</h1>
+                        
+                            <label for="title"><b>Title</b></label>
+                            <input type="text" name="title" class="inputTitle">
+                        
+                            <label for="content"><b>Content</b></label>
+                            <input type="text" name="content" class="inputContent">
+                        
+                            <input type="submit" class="btn" value="Submit"/>
+                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                            </form>
+                        </div>
+                </div>
+            </div>
+            
+             <img src="images/1.JPG" id="decoration"> 
+        </div>
+    </div>
+    
+    <script src="Notes.js"></script>
+</body>
+</html>
